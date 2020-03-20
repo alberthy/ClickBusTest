@@ -17,6 +17,7 @@ class HomeMovieViewController: UIViewController, UITableViewDelegate, UITableVie
     let backGroundImageView = UIImageView()
     var movies: [Movie]! = []
     var movieService = MovieService()
+    var currentPage = 1
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +25,13 @@ class HomeMovieViewController: UIViewController, UITableViewDelegate, UITableVie
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        self.fetchData();
+        self.fetchData(currentPage: currentPage)
+        
     }
     
-    func fetchData(){
+    func fetchData(currentPage: Int){
         
-        movieService.getPopularMovies(page: 1).responseData { (response) in
+        movieService.getPopularMovies(page: currentPage).responseData { (response) in
             
             let decoder = JSONDecoder()
                 
@@ -37,7 +39,7 @@ class HomeMovieViewController: UIViewController, UITableViewDelegate, UITableVie
             
             let responseData = try! responseSuccess.get()
             
-            self.movies = responseData.movies
+            self.movies = self.movies + responseData.movies!
             
             self.tableView.reloadData()
             
@@ -50,9 +52,19 @@ class HomeMovieViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       
         let mvCell = tableView.dequeueReusableCell(withIdentifier: "MovieViewCell", for: indexPath) as! MovieViewCell
+       
         mvCell.movie = self.movies[indexPath.row]
-        print("index: \(indexPath.row)")
+        
+        // Ajuste para paginação. Como cada página só está retornando 20 registros, utilizei
+        // o incremente por página e não pelos 30 registros.
+        // Quando chega o final chamo uma nova page.
+        if indexPath.row == (self.movies.count - 1){
+            currentPage += 1
+            fetchData(currentPage: currentPage)
+        }
+        
         return mvCell
     }
     

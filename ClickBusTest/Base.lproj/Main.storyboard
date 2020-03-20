@@ -140,7 +140,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="folder" translatesAutoresizingMaskIntoConstraints="NO" id="g30-iO-B8u">
-                                <rect key="frame" x="1" y="0.0" width="414.00000000000006" height="405"/>
+                                <rect key="frame" x="1" y="0.0" width="414" height="405"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Bloodshot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ti-3n-Otc">
                                 <rect key="frame" x="20" y="422" width="374" height="37"/>
