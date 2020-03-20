@@ -143,101 +143,110 @@
                                 <rect key="frame" x="1" y="0.0" width="414.00000000000006" height="405"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Bloodshot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ti-3n-Otc">
-                                <rect key="frame" x="20" y="427" width="374" height="37"/>
+                                <rect key="frame" x="20" y="422" width="374" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8T-jT-OjW">
-                                <rect key="frame" x="20" y="569" width="374" height="122"/>
-                                <string key="text">Baseado no best-seller de banda desenhada, Vin Diesel protagoniza "Bloodshot" na pele de Ray Garrison, um soldado recentemente morto em combate e ressuscitado como o super-humano Bloodshot da empresa RST. Com um exército de nanotecnologia nas suas veias, Ray é uma força imparável - mais forte do que</string>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Lançamento: 10/03/2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ke-Fs-4js">
-                                <rect key="frame" x="20" y="532" width="197" height="18"/>
+                                <rect key="frame" x="20" y="495" width="197" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Orçamento: 4000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psV-d3-0fk">
-                                <rect key="frame" x="20" y="556" width="197" height="18"/>
+                                <rect key="frame" x="20" y="516" width="197" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Origem: EN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWy-uk-LMF">
-                                <rect key="frame" x="20" y="579" width="197" height="18"/>
+                                <rect key="frame" x="20" y="537" width="197" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Popularidade: 83" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPX-Zj-IbW">
-                                <rect key="frame" x="225" y="486" width="169" height="18"/>
+                                <rect key="frame" x="225" y="495" width="169" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Execuções: 122" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWV-oe-fQo">
-                                <rect key="frame" x="225" y="512" width="169" height="18"/>
+                                <rect key="frame" x="225" y="516" width="169" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Status: Em breve" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BW4-K1-5Pv">
-                                <rect key="frame" x="225" y="538" width="169" height="18"/>
+                                <rect key="frame" x="225" y="537" width="169" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ação Aventura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2F-Uh-Fb4">
-                                <rect key="frame" x="20" y="461" width="88" height="16"/>
+                                <rect key="frame" x="20" y="461" width="374" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tags: novo, tiro aventura" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldm-82-SSc">
-                                <rect key="frame" x="20" y="720" width="374" height="18"/>
+                                <rect key="frame" x="20" y="738" width="374" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sinopse e detalhes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7m-ex-Nnu">
+                                <rect key="frame" x="20" y="572" width="142" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8T-jT-OjW">
+                                <rect key="frame" x="20" y="601" width="374" height="122"/>
+                                <string key="text">Baseado no best-seller de banda desenhada, Vin Diesel protagoniza "Bloodshot" na pele de Ray Garrison, um soldado recentemente morto em combate e ressuscitado como o super-humano Bloodshot da empresa RST. Com um exército de nanotecnologia nas suas veias, Ray é uma força imparável - mais forte do que</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="L8T-jT-OjW" firstAttribute="top" secondItem="BW4-K1-5Pv" secondAttribute="bottom" constant="13" id="1gl-2x-4sH"/>
-                            <constraint firstItem="psc-uh-v6N" firstAttribute="trailing" secondItem="6Ti-3n-Otc" secondAttribute="trailing" constant="20" id="2uu-75-mma"/>
-                            <constraint firstItem="cWV-oe-fQo" firstAttribute="leading" secondItem="psV-d3-0fk" secondAttribute="trailing" constant="8" id="3Vx-JR-P5k"/>
-                            <constraint firstItem="VWy-uk-LMF" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="20" id="46g-lk-Bwb"/>
-                            <constraint firstItem="0ke-Fs-4js" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="20" id="50O-hc-MGT"/>
-                            <constraint firstItem="ldm-82-SSc" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="20" id="50w-tb-UXn"/>
-                            <constraint firstItem="psc-uh-v6N" firstAttribute="trailing" secondItem="ldm-82-SSc" secondAttribute="trailing" constant="20" id="5AH-Kp-vc1"/>
-                            <constraint firstItem="psc-uh-v6N" firstAttribute="trailing" secondItem="L8T-jT-OjW" secondAttribute="trailing" constant="20" id="6Ht-8H-4QA"/>
-                            <constraint firstItem="BW4-K1-5Pv" firstAttribute="top" secondItem="cWV-oe-fQo" secondAttribute="bottom" constant="8" id="8XB-TG-tVl"/>
-                            <constraint firstItem="ldm-82-SSc" firstAttribute="top" secondItem="L8T-jT-OjW" secondAttribute="bottom" constant="29" id="8mb-qP-F9P"/>
-                            <constraint firstItem="psc-uh-v6N" firstAttribute="trailing" secondItem="cWV-oe-fQo" secondAttribute="trailing" constant="20" id="Blh-pI-owp"/>
-                            <constraint firstItem="bPX-Zj-IbW" firstAttribute="leading" secondItem="0ke-Fs-4js" secondAttribute="trailing" constant="8" id="F6q-4n-nca"/>
-                            <constraint firstItem="6Ti-3n-Otc" firstAttribute="top" secondItem="g30-iO-B8u" secondAttribute="bottom" constant="22" id="Gra-W6-6hp"/>
-                            <constraint firstItem="psc-uh-v6N" firstAttribute="trailing" secondItem="h2F-Uh-Fb4" secondAttribute="trailing" constant="306" id="MFQ-Sd-bjA"/>
-                            <constraint firstItem="psV-d3-0fk" firstAttribute="top" secondItem="0ke-Fs-4js" secondAttribute="bottom" constant="6" id="PZh-Bo-Egl"/>
-                            <constraint firstItem="psc-uh-v6N" firstAttribute="trailing" secondItem="BW4-K1-5Pv" secondAttribute="trailing" constant="20" id="St4-kw-Ddd"/>
-                            <constraint firstItem="6Ti-3n-Otc" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="20" id="YU4-Ma-uSD"/>
-                            <constraint firstItem="h2F-Uh-Fb4" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="20" id="Yww-YM-MWL"/>
-                            <constraint firstItem="0ke-Fs-4js" firstAttribute="top" secondItem="h2F-Uh-Fb4" secondAttribute="bottom" constant="9" id="aDC-kk-iqn"/>
-                            <constraint firstItem="g30-iO-B8u" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="1" id="bnD-Sd-Ir4"/>
-                            <constraint firstAttribute="trailing" secondItem="g30-iO-B8u" secondAttribute="trailing" constant="-1" id="eiT-by-gEo"/>
-                            <constraint firstItem="bPX-Zj-IbW" firstAttribute="top" secondItem="6Ti-3n-Otc" secondAttribute="bottom" constant="22" id="fLS-o6-iPr"/>
-                            <constraint firstItem="cWV-oe-fQo" firstAttribute="top" secondItem="bPX-Zj-IbW" secondAttribute="bottom" constant="8" id="gZ4-MY-zth"/>
-                            <constraint firstItem="psV-d3-0fk" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="20" id="iaZ-0B-gLz"/>
-                            <constraint firstItem="L8T-jT-OjW" firstAttribute="top" secondItem="VWy-uk-LMF" secondAttribute="bottom" constant="12" id="j3e-dM-hgr"/>
-                            <constraint firstItem="L8T-jT-OjW" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="20" id="lbl-Uz-dSf"/>
-                            <constraint firstItem="0ke-Fs-4js" firstAttribute="top" secondItem="6Ti-3n-Otc" secondAttribute="bottom" constant="22" id="lfn-Jm-eXg"/>
-                            <constraint firstItem="BW4-K1-5Pv" firstAttribute="leading" secondItem="VWy-uk-LMF" secondAttribute="trailing" constant="8" id="mtH-x6-nvK"/>
-                            <constraint firstItem="psc-uh-v6N" firstAttribute="trailing" secondItem="bPX-Zj-IbW" secondAttribute="trailing" constant="20" id="qf9-tv-OSq"/>
-                            <constraint firstItem="VWy-uk-LMF" firstAttribute="top" secondItem="psV-d3-0fk" secondAttribute="bottom" constant="5" id="vWq-S1-i9q"/>
-                            <constraint firstItem="g30-iO-B8u" firstAttribute="top" secondItem="psc-uh-v6N" secondAttribute="top" id="wDg-BV-ZBo"/>
-                            <constraint firstItem="psc-uh-v6N" firstAttribute="bottom" secondItem="ldm-82-SSc" secondAttribute="bottom" constant="70" id="y76-0p-Ekx"/>
+                            <constraint firstItem="ldm-82-SSc" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="20" id="35v-0D-PhY"/>
+                            <constraint firstItem="y7m-ex-Nnu" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="20" id="5Aq-Oa-fSM"/>
+                            <constraint firstItem="psc-uh-v6N" firstAttribute="trailing" secondItem="cWV-oe-fQo" secondAttribute="trailing" constant="20" id="7Vf-fm-rmz"/>
+                            <constraint firstItem="L8T-jT-OjW" firstAttribute="top" secondItem="y7m-ex-Nnu" secondAttribute="bottom" constant="9" id="86Z-Mn-n1g"/>
+                            <constraint firstItem="psc-uh-v6N" firstAttribute="trailing" secondItem="6Ti-3n-Otc" secondAttribute="trailing" constant="20" id="9Kg-gj-86w"/>
+                            <constraint firstItem="6Ti-3n-Otc" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="20" id="BaC-mS-ghS"/>
+                            <constraint firstItem="g30-iO-B8u" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="1" id="ChK-kL-883"/>
+                            <constraint firstItem="cWV-oe-fQo" firstAttribute="top" secondItem="bPX-Zj-IbW" secondAttribute="bottom" constant="3" id="DBf-aO-XQ3"/>
+                            <constraint firstItem="psV-d3-0fk" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="20" id="HKK-dY-bIq"/>
+                            <constraint firstItem="VWy-uk-LMF" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="20" id="I6e-jo-k5a"/>
+                            <constraint firstItem="psV-d3-0fk" firstAttribute="top" secondItem="0ke-Fs-4js" secondAttribute="bottom" constant="3" id="KOb-sa-Rf7"/>
+                            <constraint firstItem="bPX-Zj-IbW" firstAttribute="top" secondItem="h2F-Uh-Fb4" secondAttribute="bottom" constant="18" id="LoS-pf-tJC"/>
+                            <constraint firstItem="0ke-Fs-4js" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="20" id="PPk-9V-Z9n"/>
+                            <constraint firstItem="cWV-oe-fQo" firstAttribute="leading" secondItem="psV-d3-0fk" secondAttribute="trailing" constant="8" id="Pg4-Ek-DJ4"/>
+                            <constraint firstItem="6Ti-3n-Otc" firstAttribute="top" secondItem="g30-iO-B8u" secondAttribute="bottom" constant="17" id="S7d-TQ-0pq"/>
+                            <constraint firstItem="psc-uh-v6N" firstAttribute="trailing" secondItem="y7m-ex-Nnu" secondAttribute="trailing" constant="252" id="S9T-V0-FTi"/>
+                            <constraint firstItem="g30-iO-B8u" firstAttribute="top" secondItem="psc-uh-v6N" secondAttribute="top" id="STI-L2-hBa"/>
+                            <constraint firstItem="psc-uh-v6N" firstAttribute="trailing" secondItem="L8T-jT-OjW" secondAttribute="trailing" constant="20" id="T5t-Kq-erY"/>
+                            <constraint firstItem="y7m-ex-Nnu" firstAttribute="top" secondItem="VWy-uk-LMF" secondAttribute="bottom" constant="17" id="TaS-JZ-mFD"/>
+                            <constraint firstItem="psc-uh-v6N" firstAttribute="trailing" secondItem="BW4-K1-5Pv" secondAttribute="trailing" constant="20" id="Vfm-Hn-MEI"/>
+                            <constraint firstItem="BW4-K1-5Pv" firstAttribute="leading" secondItem="VWy-uk-LMF" secondAttribute="trailing" constant="8" id="WXJ-Ek-kWi"/>
+                            <constraint firstItem="h2F-Uh-Fb4" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="20" id="XtD-vz-alS"/>
+                            <constraint firstItem="psc-uh-v6N" firstAttribute="bottom" secondItem="ldm-82-SSc" secondAttribute="bottom" constant="52" id="bSy-nf-g6z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g30-iO-B8u" secondAttribute="trailing" constant="-20.999999999999943" id="cs8-vd-bLv"/>
+                            <constraint firstItem="psc-uh-v6N" firstAttribute="trailing" secondItem="ldm-82-SSc" secondAttribute="trailing" constant="20" id="dMr-ET-J2w"/>
+                            <constraint firstItem="psc-uh-v6N" firstAttribute="trailing" secondItem="bPX-Zj-IbW" secondAttribute="trailing" constant="20" id="hFl-cK-14V"/>
+                            <constraint firstItem="L8T-jT-OjW" firstAttribute="top" secondItem="BW4-K1-5Pv" secondAttribute="bottom" constant="46" id="lie-pK-K5a"/>
+                            <constraint firstItem="L8T-jT-OjW" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="20" id="pKh-Tt-tdx"/>
+                            <constraint firstItem="psc-uh-v6N" firstAttribute="trailing" secondItem="h2F-Uh-Fb4" secondAttribute="trailing" constant="20" id="pWJ-Jt-ypP"/>
+                            <constraint firstItem="0ke-Fs-4js" firstAttribute="top" secondItem="h2F-Uh-Fb4" secondAttribute="bottom" constant="18" id="qsI-6j-VWw"/>
+                            <constraint firstItem="VWy-uk-LMF" firstAttribute="top" secondItem="psV-d3-0fk" secondAttribute="bottom" constant="3" id="raz-cF-bvu"/>
+                            <constraint firstItem="BW4-K1-5Pv" firstAttribute="top" secondItem="cWV-oe-fQo" secondAttribute="bottom" constant="3" id="vIu-0f-e7J"/>
+                            <constraint firstItem="bPX-Zj-IbW" firstAttribute="leading" secondItem="0ke-Fs-4js" secondAttribute="trailing" constant="8" id="xIL-jv-a3H"/>
+                            <constraint firstItem="h2F-Uh-Fb4" firstAttribute="top" secondItem="6Ti-3n-Otc" secondAttribute="bottom" constant="2" id="xTd-wc-Hbg"/>
+                            <constraint firstItem="ldm-82-SSc" firstAttribute="top" secondItem="L8T-jT-OjW" secondAttribute="bottom" constant="15" id="zAx-1d-XHO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="psc-uh-v6N"/>
                     </view>

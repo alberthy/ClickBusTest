@@ -25,6 +25,7 @@ class Movie: Decodable {
         case note = "vote_average"
         case genreIds = "genre_ids"
         case poster = "poster_path"
+        case overview = "overview"
     }
     
     func genresDescription() -> String {

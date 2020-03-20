@@ -60,7 +60,7 @@ class DetailMovieViewController: UIViewController {
         overview.text = movie.overview
         
         budget.text = "Orçamento: \(detailMovie.budget!.description)"
-        origin.text = "Origem: \(detailMovie.origin!)"
+        origin.text = "Origem: \(detailMovie.origin!.uppercased())"
         popularity.text = "Popularidade: \(detailMovie.popularity!.description)"
         runtime.text = "Execuções: \(detailMovie.runtime!.description)"
         status.text = "Status: \(detailMovie.status!)"
