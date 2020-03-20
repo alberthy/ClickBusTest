@@ -56,15 +56,15 @@ class DetailMovieViewController: UIViewController {
         
         titleMovie.text = movie.title
         genre.text = movie.genresDescription()
-        releaseDate.text = movie.releaseDateBr()
+        releaseDate.text = "Lançamento: \(movie.releaseDateBr())"
         overview.text = movie.overview
         
-        budget.text = detailMovie.budget?.description
-        origin.text = detailMovie.origin
-        popularity.text = detailMovie.popularity?.description
-        runtime.text = detailMovie.runtime?.description
-        status.text = detailMovie.status
-        tags.text = detailMovie.tags
+        budget.text = "Orçamento: \(detailMovie.budget!.description)"
+        origin.text = "Origem: \(detailMovie.origin!)"
+        popularity.text = "Popularidade: \(detailMovie.popularity!.description)"
+        runtime.text = "Execuções: \(detailMovie.runtime!.description)"
+        status.text = "Status: \(detailMovie.status!)"
+        tags.text = "Tags: \(detailMovie.tags!)"
            
     }
     

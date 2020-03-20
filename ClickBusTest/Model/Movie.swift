@@ -80,7 +80,7 @@ class MovieDetail: Decodable {
         case popularity = "popularity"
         case runtime = "runtime"
         case status = "status"
-        case tags = "tags"
+        case tags = "tagline"
     }
     
 }

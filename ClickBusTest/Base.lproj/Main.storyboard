@@ -140,15 +140,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="folder" translatesAutoresizingMaskIntoConstraints="NO" id="g30-iO-B8u">
-                                <rect key="frame" x="1" y="-675" width="414" height="1080"/>
+                                <rect key="frame" x="1" y="0.0" width="414.00000000000006" height="405"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bloodshot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ti-3n-Otc">
-                                <rect key="frame" x="20" y="422" width="374" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Bloodshot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ti-3n-Otc">
+                                <rect key="frame" x="20" y="427" width="374" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8T-jT-OjW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8T-jT-OjW">
                                 <rect key="frame" x="20" y="569" width="374" height="122"/>
                                 <string key="text">Baseado no best-seller de banda desenhada, Vin Diesel protagoniza "Bloodshot" na pele de Ray Garrison, um soldado recentemente morto em combate e ressuscitado como o super-humano Bloodshot da empresa RST. Com um exército de nanotecnologia nas suas veias, Ray é uma força imparável - mais forte do que</string>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
@@ -191,13 +191,13 @@
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ação Aventura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2F-Uh-Fb4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ação Aventura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2F-Uh-Fb4">
                                 <rect key="frame" x="20" y="461" width="88" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tags: novo, tiro aventura" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldm-82-SSc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tags: novo, tiro aventura" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldm-82-SSc">
                                 <rect key="frame" x="20" y="720" width="374" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -217,24 +217,26 @@
                             <constraint firstItem="BW4-K1-5Pv" firstAttribute="top" secondItem="cWV-oe-fQo" secondAttribute="bottom" constant="8" id="8XB-TG-tVl"/>
                             <constraint firstItem="ldm-82-SSc" firstAttribute="top" secondItem="L8T-jT-OjW" secondAttribute="bottom" constant="29" id="8mb-qP-F9P"/>
                             <constraint firstItem="psc-uh-v6N" firstAttribute="trailing" secondItem="cWV-oe-fQo" secondAttribute="trailing" constant="20" id="Blh-pI-owp"/>
-                            <constraint firstItem="h2F-Uh-Fb4" firstAttribute="top" secondItem="g30-iO-B8u" secondAttribute="bottom" constant="56" id="E7r-AS-bcc"/>
                             <constraint firstItem="bPX-Zj-IbW" firstAttribute="leading" secondItem="0ke-Fs-4js" secondAttribute="trailing" constant="8" id="F6q-4n-nca"/>
+                            <constraint firstItem="6Ti-3n-Otc" firstAttribute="top" secondItem="g30-iO-B8u" secondAttribute="bottom" constant="22" id="Gra-W6-6hp"/>
                             <constraint firstItem="psc-uh-v6N" firstAttribute="trailing" secondItem="h2F-Uh-Fb4" secondAttribute="trailing" constant="306" id="MFQ-Sd-bjA"/>
                             <constraint firstItem="psV-d3-0fk" firstAttribute="top" secondItem="0ke-Fs-4js" secondAttribute="bottom" constant="6" id="PZh-Bo-Egl"/>
                             <constraint firstItem="psc-uh-v6N" firstAttribute="trailing" secondItem="BW4-K1-5Pv" secondAttribute="trailing" constant="20" id="St4-kw-Ddd"/>
                             <constraint firstItem="6Ti-3n-Otc" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="20" id="YU4-Ma-uSD"/>
                             <constraint firstItem="h2F-Uh-Fb4" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="20" id="Yww-YM-MWL"/>
                             <constraint firstItem="0ke-Fs-4js" firstAttribute="top" secondItem="h2F-Uh-Fb4" secondAttribute="bottom" constant="9" id="aDC-kk-iqn"/>
+                            <constraint firstItem="g30-iO-B8u" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="1" id="bnD-Sd-Ir4"/>
+                            <constraint firstAttribute="trailing" secondItem="g30-iO-B8u" secondAttribute="trailing" constant="-1" id="eiT-by-gEo"/>
                             <constraint firstItem="bPX-Zj-IbW" firstAttribute="top" secondItem="6Ti-3n-Otc" secondAttribute="bottom" constant="22" id="fLS-o6-iPr"/>
                             <constraint firstItem="cWV-oe-fQo" firstAttribute="top" secondItem="bPX-Zj-IbW" secondAttribute="bottom" constant="8" id="gZ4-MY-zth"/>
                             <constraint firstItem="psV-d3-0fk" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="20" id="iaZ-0B-gLz"/>
                             <constraint firstItem="L8T-jT-OjW" firstAttribute="top" secondItem="VWy-uk-LMF" secondAttribute="bottom" constant="12" id="j3e-dM-hgr"/>
-                            <constraint firstItem="6Ti-3n-Otc" firstAttribute="top" secondItem="g30-iO-B8u" secondAttribute="bottom" constant="17" id="k3A-IO-W8r"/>
                             <constraint firstItem="L8T-jT-OjW" firstAttribute="leading" secondItem="psc-uh-v6N" secondAttribute="leading" constant="20" id="lbl-Uz-dSf"/>
                             <constraint firstItem="0ke-Fs-4js" firstAttribute="top" secondItem="6Ti-3n-Otc" secondAttribute="bottom" constant="22" id="lfn-Jm-eXg"/>
                             <constraint firstItem="BW4-K1-5Pv" firstAttribute="leading" secondItem="VWy-uk-LMF" secondAttribute="trailing" constant="8" id="mtH-x6-nvK"/>
                             <constraint firstItem="psc-uh-v6N" firstAttribute="trailing" secondItem="bPX-Zj-IbW" secondAttribute="trailing" constant="20" id="qf9-tv-OSq"/>
                             <constraint firstItem="VWy-uk-LMF" firstAttribute="top" secondItem="psV-d3-0fk" secondAttribute="bottom" constant="5" id="vWq-S1-i9q"/>
+                            <constraint firstItem="g30-iO-B8u" firstAttribute="top" secondItem="psc-uh-v6N" secondAttribute="top" id="wDg-BV-ZBo"/>
                             <constraint firstItem="psc-uh-v6N" firstAttribute="bottom" secondItem="ldm-82-SSc" secondAttribute="bottom" constant="70" id="y76-0p-Ekx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="psc-uh-v6N"/>
