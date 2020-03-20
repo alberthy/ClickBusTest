@@ -16,7 +16,7 @@ class HomeMovieViewController: UIViewController, UITableViewDelegate, UITableVie
     let backGroundImageView = UIImageView()
     var movies: [Movie]! = []
     var movieService = MovieService()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -91,10 +91,56 @@ class MovieViewCell: UITableViewCell {
     
     func updateUI() {
         title.text = movie.title
-        genres.text = movie.genreIds?.description
-        releaseDate.text = "Lançamento: \(movie.releaseDate!)"
+        genres.text = filterGenre(ids: movie.genreIds!)
         avgNote.text = String(movie.note!)
+        releaseDate.text = "Lançamento: \(formatDatePtBR(date: movie.releaseDate!))"
+        
     }
+    
+    func filterGenre(ids: [Int]) -> String {
+        
+        let genresDataBase =  loadJson(filename: "genres")
+        
+        var genresString: String = ""
+        
+        var count = 0;
+
+        for id in ids {
+            genresDataBase?.forEach({ (g) in
+                genresString.append((id == g.id) ? "\(g.name) " : "")
+            })
+            count = count + 1
+        }
+        
+        return genresString
+    
+    }
+    
+    func formatDatePtBR(date: String!) -> String {
+        
+       let dateFormatter = DateFormatter()
+       let createdDate = dateFormatter.date(fromSwapiString: movie.releaseDate!)
+       
+       let dateFormatterBr = DateFormatter()
+       dateFormatterBr.dateFormat = "dd/MM/yyyy"
+        
+        return dateFormatterBr.string(from: createdDate!)
+        
+    }
+    
+    
+}
+
+
+
+extension DateFormatter {
+    
+  func date(fromSwapiString dateString: String) -> Date? {
+    self.dateFormat = "yyyy-MM-dd"
+    self.timeZone = TimeZone(abbreviation: "UTC")
+    self.locale = Locale(identifier: "pt_BR")
+    return self.date(from: dateString)
+  }
     
 }
 
@@ -120,3 +166,5 @@ extension JSONDecoder {
         }
     }
 }
+
+

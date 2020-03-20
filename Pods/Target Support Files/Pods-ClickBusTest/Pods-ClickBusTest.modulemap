@@ -1,0 +1,6 @@
+framework module Pods_ClickBusTest {
+  umbrella header "Pods-ClickBusTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

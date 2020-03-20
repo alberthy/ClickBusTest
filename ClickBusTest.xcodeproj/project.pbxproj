@@ -18,6 +18,8 @@
 		24E032002423C0CC009A1977 /* HomeMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E031FF2423C0CC009A1977 /* HomeMovieViewController.swift */; };
 		24E032022423CC8A009A1977 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E032012423CC8A009A1977 /* MovieService.swift */; };
 		24E032042423CF6E009A1977 /* moviedb.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24E032032423CF6E009A1977 /* moviedb.plist */; };
+		24E0320624243AEF009A1977 /* genres.json in Resources */ = {isa = PBXBuildFile; fileRef = 24E0320524243AEF009A1977 /* genres.json */; };
+		24E0320824243C7B009A1977 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0320724243C7B009A1977 /* Genre.swift */; };
 		492095485B715C3EA6011C56 /* Pods_ClickBusTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF66D8CEA657C5DFA0ED7EF9 /* Pods_ClickBusTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		24E031FF2423C0CC009A1977 /* HomeMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMovieViewController.swift; sourceTree = "<group>"; };
 		24E032012423CC8A009A1977 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		24E032032423CF6E009A1977 /* moviedb.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = moviedb.plist; sourceTree = "<group>"; };
+		24E0320524243AEF009A1977 /* genres.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = genres.json; sourceTree = "<group>"; };
+		24E0320724243C7B009A1977 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		3265C9C95C55AE80681531F2 /* Pods-ClickBusTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickBusTest.debug.xcconfig"; path = "Target Support Files/Pods-ClickBusTest/Pods-ClickBusTest.debug.xcconfig"; sourceTree = "<group>"; };
 		AF66D8CEA657C5DFA0ED7EF9 /* Pods_ClickBusTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClickBusTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3990D79EC12522BAF0A1E10 /* Pods-ClickBusTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickBusTest.release.xcconfig"; path = "Target Support Files/Pods-ClickBusTest/Pods-ClickBusTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 				24E031EE2423ACDC009A1977 /* LaunchScreen.storyboard */,
 				24E031F12423ACDC009A1977 /* Info.plist */,
 				24E032032423CF6E009A1977 /* moviedb.plist */,
+				24E0320524243AEF009A1977 /* genres.json */,
 			);
 			path = ClickBusTest;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 			children = (
 				24E031FB2423B764009A1977 /* Movie.swift */,
 				24E031FD2423BD85009A1977 /* MovieResponse.swift */,
+				24E0320724243C7B009A1977 /* Genre.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 			files = (
 				24E031F02423ACDC009A1977 /* LaunchScreen.storyboard in Resources */,
 				24E032042423CF6E009A1977 /* moviedb.plist in Resources */,
+				24E0320624243AEF009A1977 /* genres.json in Resources */,
 				24E031ED2423ACDC009A1977 /* Assets.xcassets in Resources */,
 				24E031EB2423ACD8009A1977 /* Main.storyboard in Resources */,
 			);
@@ -261,6 +268,7 @@
 				24E031FC2423B764009A1977 /* Movie.swift in Sources */,
 				24E031E62423ACD8009A1977 /* SceneDelegate.swift in Sources */,
 				24E032022423CC8A009A1977 /* MovieService.swift in Sources */,
+				24E0320824243C7B009A1977 /* Genre.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
