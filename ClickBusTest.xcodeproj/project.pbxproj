@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24ABCDE624252849007B59B7 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABCDE524252849007B59B7 /* Alert.swift */; };
 		24E031E42423ACD8009A1977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E031E32423ACD8009A1977 /* AppDelegate.swift */; };
 		24E031E62423ACD8009A1977 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E031E52423ACD8009A1977 /* SceneDelegate.swift */; };
 		24E031E82423ACD8009A1977 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E031E72423ACD8009A1977 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24ABCDE524252849007B59B7 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		24E031E02423ACD8009A1977 /* ClickBusTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickBusTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E031E32423ACD8009A1977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E031E52423ACD8009A1977 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 		24E031F92423B616009A1977 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				24ABCDE524252849007B59B7 /* Alert.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				24E031FC2423B764009A1977 /* Movie.swift in Sources */,
 				24E031E62423ACD8009A1977 /* SceneDelegate.swift in Sources */,
 				24E032022423CC8A009A1977 /* MovieService.swift in Sources */,
+				24ABCDE624252849007B59B7 /* Alert.swift in Sources */,
 				24E0320824243C7B009A1977 /* Genre.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

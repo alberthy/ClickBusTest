@@ -41,4 +41,10 @@ class MovieService {
        return AF.request("\(api)/movie/\(id)?api_key=\(apiKey)", method: .get, headers: headers)
     }
     
+    /*
+     * Retorna a listagem dos filmes de acordo com o filme consultado.
+     */
+    func searchMoviesByText(text: String) -> DataRequest {
+       return AF.request("\(api)/search/movie?query=\(text)&api_key=\(apiKey)", method: .get, headers: headers)
+    }
 }

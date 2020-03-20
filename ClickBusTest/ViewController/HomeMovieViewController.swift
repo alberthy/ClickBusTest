@@ -10,7 +10,9 @@ import UIKit
 import Alamofire
 import SDWebImage
 
-class HomeMovieViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeMovieViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+    
+    @IBOutlet weak var searchBar: UISearchBar!
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -26,6 +28,37 @@ class HomeMovieViewController: UIViewController, UITableViewDelegate, UITableVie
         self.tableView.dataSource = self
         
         self.fetchData(currentPage: currentPage)
+        
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        guard let movieSearch = searchBar.text, movieSearch != "" else {
+            Alert(self).show("Alerta!", message: "Para realizar consulta é necessário informar o nome do filme!")
+            return
+        }
+        
+        self.searchMoviesByText(text: movieSearch)
+        
+    }
+    
+    func searchMoviesByText(text: String) {
+        
+        print("search in \(text)")
+        
+        movieService.searchMoviesByText(text: text).responseData { (response) in
+            
+            let decoder = JSONDecoder()
+                
+            let responseSuccess: Swift.Result<MovieResponse, Error> = decoder.decodeResponse(from: response)
+            
+            let responseData = try! responseSuccess.get()
+            
+             self.movies = responseData.movies
+            
+            self.tableView.reloadData()
+            
+        }
         
     }
     
@@ -46,6 +79,7 @@ class HomeMovieViewController: UIViewController, UITableViewDelegate, UITableVie
         }
         
     }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.movies.count
@@ -68,6 +102,7 @@ class HomeMovieViewController: UIViewController, UITableViewDelegate, UITableVie
         return mvCell
     }
     
+    // event for view movie detail
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "MovieDetailSegue" {
             if let detailMovieTableView = segue.destination as? DetailMovieViewController {
@@ -98,9 +133,9 @@ class MovieViewCell: UITableViewCell {
     func updateUI() {
         title.text = movie.title
         genres.text = movie.genresDescription()
-        avgNote.text = String(movie.note!)
+        avgNote.text = String(movie.note ?? 0.0)
         releaseDate.text = "Lançamento: \(movie.releaseDateBr())"
-        trumbnail.sd_setImage(with: URL(string: "https://image.tmdb.org/t/p/w500\(movie.poster!)"), placeholderImage: UIImage(named: "place_holder.png"))
+        trumbnail.sd_setImage(with: URL(string: "https://image.tmdb.org/t/p/w500\(movie.poster ?? "")"), placeholderImage: UIImage(named: "place_holder.png"))
     }
     
 }

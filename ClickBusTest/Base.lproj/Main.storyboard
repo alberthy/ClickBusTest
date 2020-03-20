@@ -108,6 +108,9 @@
                             <searchBar contentMode="redraw" prompt="Filmes populares" placeholder="nome do filme..." translatesAutoresizingMaskIntoConstraints="NO" id="ZDX-Lw-Q7s">
                                 <rect key="frame" x="0.0" y="33" width="414" height="90"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="xWP-ma-UlT"/>
+                                </connections>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -124,6 +127,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="searchBar" destination="ZDX-Lw-Q7s" id="Wgr-5z-Zcj"/>
                         <outlet property="tableView" destination="qY4-jp-KVS" id="DuU-fb-Ino"/>
                     </connections>
                 </viewController>

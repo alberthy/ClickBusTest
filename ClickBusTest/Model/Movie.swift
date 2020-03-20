@@ -46,6 +46,10 @@ class Movie: Decodable {
     
     func releaseDateBr() -> String {
         
+        guard let d = releaseDate, d != "" else {
+            return ""
+        }
+        
        let dateFormatter = DateFormatter()
        let createdDate = dateFormatter.date(fromSwapiString: releaseDate!)
        
