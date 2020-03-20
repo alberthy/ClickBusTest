@@ -34,4 +34,11 @@ class MovieService {
        return AF.request("\(api)/movie/popular?page=\(page)&api_key=\(apiKey)", method: .get, headers: headers)
     }
     
+    /*
+     * Retorna o detalhamento de filme selecionado
+     */
+    func getDetailByMovieId(id: Int) -> DataRequest {
+       return AF.request("\(api)/movie/\(id)?api_key=\(apiKey)", method: .get, headers: headers)
+    }
+    
 }

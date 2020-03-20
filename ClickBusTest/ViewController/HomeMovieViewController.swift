@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SDWebImage
 
 class HomeMovieViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -23,7 +24,6 @@ class HomeMovieViewController: UIViewController, UITableViewDelegate, UITableVie
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        self.applybackground()
         self.fetchData();
     }
     
@@ -52,27 +52,21 @@ class HomeMovieViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let mvCell = tableView.dequeueReusableCell(withIdentifier: "MovieViewCell", for: indexPath) as! MovieViewCell
         mvCell.movie = self.movies[indexPath.row]
+        print("index: \(indexPath.row)")
         return mvCell
     }
     
-    func applybackground() {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "MovieDetailSegue" {
+            if let detailMovieTableView = segue.destination as? DetailMovieViewController {
+                if let index = self.tableView.indexPathForSelectedRow?.row {
+                    detailMovieTableView.movie = self.movies[index]
+                }
+            }
+        }
         
-        view.addSubview(backGroundImageView)
-        
-        backGroundImageView.translatesAutoresizingMaskIntoConstraints = false
-        backGroundImageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        backGroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        backGroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        backGroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        
-        backGroundImageView.image = UIImage(named: "background")
-        
-        view.sendSubviewToBack(backGroundImageView)
-
     }
-    
-    
-    
+
 }
 
 class MovieViewCell: UITableViewCell {
@@ -91,56 +85,11 @@ class MovieViewCell: UITableViewCell {
     
     func updateUI() {
         title.text = movie.title
-        genres.text = filterGenre(ids: movie.genreIds!)
+        genres.text = movie.genresDescription()
         avgNote.text = String(movie.note!)
-        releaseDate.text = "Lançamento: \(formatDatePtBR(date: movie.releaseDate!))"
-        
+        releaseDate.text = "Lançamento: \(movie.releaseDateBr())"
+        trumbnail.sd_setImage(with: URL(string: "https://image.tmdb.org/t/p/w500\(movie.poster!)"), placeholderImage: UIImage(named: "place_holder.png"))
     }
-    
-    func filterGenre(ids: [Int]) -> String {
-        
-        let genresDataBase =  loadJson(filename: "genres")
-        
-        var genresString: String = ""
-        
-        var count = 0;
-
-        for id in ids {
-            genresDataBase?.forEach({ (g) in
-                genresString.append((id == g.id) ? "\(g.name) " : "")
-            })
-            count = count + 1
-        }
-        
-        return genresString
-    
-    }
-    
-    func formatDatePtBR(date: String!) -> String {
-        
-       let dateFormatter = DateFormatter()
-       let createdDate = dateFormatter.date(fromSwapiString: movie.releaseDate!)
-       
-       let dateFormatterBr = DateFormatter()
-       dateFormatterBr.dateFormat = "dd/MM/yyyy"
-        
-        return dateFormatterBr.string(from: createdDate!)
-        
-    }
-    
-    
-}
-
-
-
-extension DateFormatter {
-    
-  func date(fromSwapiString dateString: String) -> Date? {
-    self.dateFormat = "yyyy-MM-dd"
-    self.timeZone = TimeZone(abbreviation: "UTC")
-    self.locale = Locale(identifier: "pt_BR")
-    return self.date(from: dateString)
-  }
     
 }
 

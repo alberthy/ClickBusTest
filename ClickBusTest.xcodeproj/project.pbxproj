@@ -20,6 +20,7 @@
 		24E032042423CF6E009A1977 /* moviedb.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24E032032423CF6E009A1977 /* moviedb.plist */; };
 		24E0320624243AEF009A1977 /* genres.json in Resources */ = {isa = PBXBuildFile; fileRef = 24E0320524243AEF009A1977 /* genres.json */; };
 		24E0320824243C7B009A1977 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0320724243C7B009A1977 /* Genre.swift */; };
+		24E0320C24246998009A1977 /* DetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E0320B24246998009A1977 /* DetailMovieViewController.swift */; };
 		492095485B715C3EA6011C56 /* Pods_ClickBusTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF66D8CEA657C5DFA0ED7EF9 /* Pods_ClickBusTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		24E032032423CF6E009A1977 /* moviedb.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = moviedb.plist; sourceTree = "<group>"; };
 		24E0320524243AEF009A1977 /* genres.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = genres.json; sourceTree = "<group>"; };
 		24E0320724243C7B009A1977 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		24E0320B24246998009A1977 /* DetailMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewController.swift; sourceTree = "<group>"; };
 		3265C9C95C55AE80681531F2 /* Pods-ClickBusTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickBusTest.debug.xcconfig"; path = "Target Support Files/Pods-ClickBusTest/Pods-ClickBusTest.debug.xcconfig"; sourceTree = "<group>"; };
 		AF66D8CEA657C5DFA0ED7EF9 /* Pods_ClickBusTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClickBusTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3990D79EC12522BAF0A1E10 /* Pods-ClickBusTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickBusTest.release.xcconfig"; path = "Target Support Files/Pods-ClickBusTest/Pods-ClickBusTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				24E031FF2423C0CC009A1977 /* HomeMovieViewController.swift */,
+				24E0320B24246998009A1977 /* DetailMovieViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24E031E82423ACD8009A1977 /* ViewController.swift in Sources */,
+				24E0320C24246998009A1977 /* DetailMovieViewController.swift in Sources */,
 				24E031FE2423BD85009A1977 /* MovieResponse.swift in Sources */,
 				24E032002423C0CC009A1977 /* HomeMovieViewController.swift in Sources */,
 				24E031E42423ACD8009A1977 /* AppDelegate.swift in Sources */,
